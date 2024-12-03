@@ -1,0 +1,114 @@
+nav{
+    padding: 10px 1.5%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: var(--primary-color);
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* Ensure it stays on top */
+
+    
+
+    .logo-box{
+        width: 225px;
+        height: 40px;
+        gap: 10px;
+    }
+
+    .nav-left{
+        
+        span{
+            font-size: 19px;
+        }
+
+
+    }
+
+    .nav-middle{
+      flex: 1;
+
+        .search-box{
+            
+            width: 100%;
+            max-width: 720px;
+            background: var(--dark-gray-color);
+            padding: 10px 15px;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            gap: 14px;
+
+            svg{
+                vertical-align: middle;
+              
+            }
+
+            input{
+                background: transparent;
+               flex: 1;
+                outline: none;
+                border: none;
+                font-size: 16px;
+                text-overflow: ellipsis;
+                vertical-align: top;
+                z-index: auto;
+
+            }
+}
+
+
+    }
+
+    .nav-right{
+
+        img{
+           
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+}
+
+.example-button-row{
+    gap: 6px;
+}
+
+        button{
+            display: flex;
+                justify-content: center;
+               
+
+
+            svg{
+                vertical-align: middle;
+              
+            }
+
+            .custom-icon-button {
+                padding: 0;
+            
+              }
+
+            
+    
+        }
+
+
+
+        
+        
+    }
+
+
+}
+
+
+
