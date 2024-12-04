@@ -20,7 +20,6 @@
 </div>
 
 
-
 <div class="nav-right flex-div">
     <div class="example-button-row flex-div">
 
@@ -37,15 +36,23 @@
              <span class="material-symbols-outlined">settings</span> 
           </button>
 
-          <button mat-icon-button  class="flex-div">
+          <button mat-icon-button  class="flex-div"  >
             <svg class="gb_E" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path><image src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="" height="24" width="24" style="border:none;display:none \9"></image></svg>
           </button>
 
-          <img src="../../../assets/images/rakesh-proofile-pic.jpg" alt="">
+          <img src="../../../assets/images/rakesh-proofile-pic.jpg" alt="" (click)="openDialog($event)">
+        </div>
+
+
+    <ng-template>
+        <h1 mat-dialog-title>Google Apps</h1>
+        <div mat-dialog-content>
+          <p>Your Google Apps content goes here...</p>
+        </div>
+      </ng-template>
 
 
 
-    </div>
 
 
 

@@ -2,26 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
-    --primary-color: #f0f4f9;
-    --secondary-color: #ffffff;
-    --dark-gray-color:#e9edf5;
-    --primary-text-color: #1f1f1f;
-    --light-text-color: #959595;
-    --font-weight: 500;
-    --font-weight-bold: 600;
-    --font-size: 0.85rem;
+  --primary-color: #f0f4f9;
+  --secondary-color: #ffffff;
+  --dark-gray-color: #e9edf5;
+  --primary-text-color: #1f1f1f;
+  --light-text-color: #959595;
+  --font-weight: 500;
+  --font-weight-bold: 600;
+  --font-size: 0.85rem;
 }
 
 .dark-theme {
-    --primary-color: #000106;
-    --secondary-color: #fff;
+  --primary-color: #000106;
+  --secondary-color: #fff;
 }
 
 
@@ -31,83 +31,92 @@
 
 
 a {
-    text-decoration: none;
-    color: var(--light-text-color);
+  text-decoration: none;
+  color: var(--light-text-color);
 }
 
-img{
-    cursor: pointer;
+img {
+  cursor: pointer;
 }
 
 
 body {
- 
-    height: 100%;
-    background: var(--primary-color);
-    overflow: hidden; /* Prevent scrolling on the main window */
+
+  height: 100%;
+  background: var(--primary-color);
+  overflow: hidden;
+  /* Prevent scrolling on the main window */
 
 }
 
-.flex-div{
-    display: flex;
-    align-items: center;
+.flex-div {
+  display: flex;
+  align-items: center;
 }
 
-.justify-center{
-    justify-content: center;
+.justify-center {
+  justify-content: center;
 }
 
 
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* Full viewport height */
 
-  }
-
-  
-
-  .content-wrapper {
-    display: flex;
-    margin-top: 60px; 
-    height: calc(100vh - 60px); 
-  }
+}
 
 
 
-  .right-content {
-    
-    margin-left: 260px; 
-    flex-grow: 1;
-    height: calc(100vh - 60px); /* Fill height minus the top header */
-    overflow-y: auto; /* Allow only the right content to scroll */
-    padding: 20px;
-    background-color: #fff;
-  }
-  
-  /* Scrollable content inside the right section */
-  .scrollable-content {
-    height: 100%;
-    background-color: #fff;
-  }
-
-  
+.content-wrapper {
+  display: flex;
+  margin-top: 60px;
+  height: calc(100vh - 60px);
+}
 
 
 
+.right-content {
+
+  margin-left: 260px;
+  flex-grow: 1;
+  height: calc(100vh - 60px);
+  /* Fill height minus the top header */
+  overflow-y: auto;
+  /* Allow only the right content to scroll */
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Scrollable content inside the right section */
+.scrollable-content {
+  height: 100%;
+  background-color: #fff;
+}
 
 
 
+.m-top {
+  margin-top: 20px;
+}
+
+.m-start {
+  margin-left: 10px;
+}
+
+.custom-dialog-container{
+  position: absolute !important; 
+  top: 75px  !important;
+  right: 30px  !important;
 
 
-  .m-top{
-    margin-top: 20px;
-  }
-    .m-start{
-        margin-left: 10px;
-    }  
+}
 
-
-
-
+/* Custom styling for the inbuilt mat-mdc-dialog-surface */
+.mat-mdc-dialog-surface {
+  background-color: #f5f5f5 !important;  /* Custom background color */
+  padding: 20px;  /* Optional: Adjust padding */
+  border-radius: 8px;  /* Optional: Rounded corners */
+}
