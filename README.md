@@ -57,3 +57,19 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+
+<!-- Angular Photos App -->
+ <!-- Functionality Service -->
+
+ 1. Use progress bar Functionality implement
+ 2. all pages links are working
+ 3. angular material dialog box Functionality implement with help of chat gpt 
+ 4. Use SafeHtml to safely store SVG content for SVG Icon
+ 5. Using an interface for menu is defines structure of an object.
+ 6. using the scss code 
+ 7. useing loop functionality for dynamically menu 
+
+
+

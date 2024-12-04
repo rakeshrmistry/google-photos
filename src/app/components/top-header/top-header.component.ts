@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
@@ -6,6 +6,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogBoxComponent } from '../dialog-box/dialog-box.component';
+import { Router, NavigationStart } from '@angular/router';
 
 @Component({
   selector: 'app-top-header',
@@ -13,10 +14,21 @@ import { DialogBoxComponent } from '../dialog-box/dialog-box.component';
   templateUrl: './top-header.component.html',
   styleUrls: ['./top-header.component.scss']
 })
-export class TopHeaderComponent {
+export class TopHeaderComponent implements OnInit {
   private dialogRef: any;  // Reference to the currently opened dialog
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, private router: Router) {}
+
+  ngOnInit(): void {
+    // Listen for route changes and close the dialog on navigation start
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        if (this.dialogRef) {
+          this.dialogRef.close();  // Close the dialog if it's open
+        }
+      }
+    });
+  }
 
   openDialog(event: MouseEvent): void {
     // Check if the dialog is already open
